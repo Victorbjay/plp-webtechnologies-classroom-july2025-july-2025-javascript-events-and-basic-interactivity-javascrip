@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 6 – Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page Demo</h1>
+    <button id="theme-toggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- ===== Collapsible FAQ Section ===== -->
+    <section class="faq">
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <button class="faq-question">What is this assignment?</button>
+        <p class="faq-answer">It demonstrates interactive features with JavaScript: events, DOM changes, and validation.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How is the form validated?</button>
+        <p class="faq-answer">Custom JavaScript checks each field and shows helpful error messages.</p>
+      </div>
+    </section>
+
+    <!-- ===== Contact Form ===== -->
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form" novalidate>
+        <label>
+          Name:
+          <input type="text" id="name" />
+          <span class="error" id="name-error"></span>
+        </label>
+        <label>
+          Email:
+          <input type="text" id="email" />
+          <span class="error" id="email-error"></span>
+        </label>
+        <label>
+          Password:
+          <input type="password" id="password" />
+          <span class="error" id="password-error"></span>
+        </label>
+        <button type="submit">Submit</button>
+        <p id="form-success" class="success"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Interactive Demo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
